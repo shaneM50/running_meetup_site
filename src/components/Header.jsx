@@ -5,8 +5,8 @@ function Header() {
     <header className="App-header">
       <h1>Valencia Social Runners</h1>
       <nav>
-        <a href="#about">About Us</a>
-        <a href="#connect">Connect</a>
+        <a href="#about">Sobre nosotros</a>
+        <a href="#connect">Únete</a>
       </nav>
     </header>
   );

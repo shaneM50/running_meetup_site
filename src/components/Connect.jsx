@@ -16,7 +16,7 @@ function Connect() {
             target="_blank"
             rel="noopener noreferrer" // prevents the opened page from accessing window.opener and stops referrer info being sent
           >
-            Join our Telegram group
+            Únete a nuestro grupo de Telegram
           </a>
         </p>
         <p>
@@ -26,7 +26,7 @@ function Connect() {
             target="_blank"
             rel="noopener noreferrer" // improves security (blocks window.opener) and privacy (omits referrer)
           >
-            Join our Meetup group
+            Únete a nuestro grupo de Meetup
           </a>
         </p>
       </div>
