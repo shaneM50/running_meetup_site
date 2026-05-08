@@ -1,71 +1,36 @@
-# Getting Started with Create React App
+# Running Meetup Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple web app to organize local running meetup — list events, connect.
 
-## Available Scripts
+## Quick start
+```bash
+git clone https://github.com/shaneM50/running_meetup_site.git
+cd running_meetup_site
 
-In the project directory, you can run:
+# install dependencies (example)
+# npm install   OR   pip install -r requirements.txt
 
-### `npm start`
+# configure
+# create .env with required values:
+# DATABASE_URL, SECRET_KEY, MAPS_API_KEY
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# run (example)
+# npm start   OR   flask run
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+- Info about the group.
+- Event list with date/time, route and distance   
+- Connect to the group.
 
-### `npm test`
+## Project layout (typical)
+- `src/` — application source code  
+- `public/` — static assets  
+- `scripts/` — migrations, seeds, helpers  
+- `tests/` — test suite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# running_meetup_site
+## Contributing
+1. Fork the repo  
+2. Create a branch for your change  
+3. Add tests where applicable  
+4. Open a pull request
