@@ -13,7 +13,7 @@ import React, { useEffect, useState } from "react";
 */
 
 function Schedule() {
-  const MEETUP_GROUP_URLNAME = "your-meetup-group"; // e.g. "ReactJS-London"
+  const MEETUP_GROUP_URLNAME = "valencia-social-runners"; 
   const RSS_URL = `https://www.meetup.com/${MEETUP_GROUP_URLNAME}/events/rss/`;
 
   const [events, setEvents] = useState([]);

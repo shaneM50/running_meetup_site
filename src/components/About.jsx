@@ -5,8 +5,8 @@ function About() {
     <section id="about" className="section">
       <h2>About Us</h2>
       <p>
-        We are a small team focused on delivering great experiences for our
-        customers. This is a simple one-page React app with three sections.
+        All levels welcome. We meet every week to enjoy a social run. 
+        This is a free group for anyone who wants to run together.
       </p>
     </section>
   );
