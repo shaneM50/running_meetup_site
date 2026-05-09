@@ -1,7 +1,16 @@
-/* src/App.css */
+
 .App {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: #222;
+}
+
+.no-underline-link,
+.no-underline-link:link,
+.no-underline-link:visited,
+.no-underline-link:hover,
+.no-underline-link:active,
+.no-underline-link:focus {
+  text-decoration: none;
 }
 
 .App-header {
@@ -18,13 +27,8 @@
   gap: 1rem;
 }
 
-.App-header a {
+.App-header nav a {
   color: #61dafb;
-  text-decoration: none;
-}
-
-.App-header a:hover {
-  text-decoration: underline;
 }
 
 main {
@@ -39,42 +43,17 @@ main {
   margin-bottom: 0.5rem;
 }
 
-.connect-form,
-.schedule-form {
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
 label {
   display: flex;
   flex-direction: column;
   font-size: 0.9rem;
 }
 
-input,
-textarea,
-button {
-  margin-top: 0.25rem;
-  padding: 0.5rem;
-  font-size: 1rem;
-}
-
-button {
-  cursor: pointer;
-  background: #007acc;
-  color: white;
-  border: none;
-  border-radius: 4px;
-}
-
-button:hover {
-  background: #005fa3;
-}
-
 .App-footer {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;   /* space between items */
   padding: 1rem;
   border-top: 1px solid #ddd;
   font-size: 0.8rem;

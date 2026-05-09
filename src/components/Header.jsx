@@ -1,12 +1,13 @@
 import React from "react";
+import HyperLink from "./HyperLink";
 
 function Header() {
   return (
     <header className="App-header">
       <h1>Valencia Social Runners</h1>
       <nav>
-        <a href="#about">Sobre nosotros</a>
-        <a href="#connect">Únete</a>
+        <HyperLink href="#about" label="Sobre nosotros" />
+        <HyperLink href="#connect" label="Únete"/>
       </nav>
     </header>
   );

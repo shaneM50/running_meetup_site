@@ -1,4 +1,5 @@
 import React from "react";
+import HyperLink from "./HyperLink";
 
 function Connect() {
   const TELEGRAM_URL = "https://t.me/+CUGGFGbG3wFjZjBk"
@@ -10,24 +11,12 @@ function Connect() {
 
       <div className="connect-links">
         <p>
-          <strong>Telegram:</strong>{" "}
-          <a
-            href={TELEGRAM_URL}
-            target="_blank"
-            rel="noopener noreferrer" // prevents the opened page from accessing window.opener and stops referrer info being sent
-          >
-            Únete a nuestro grupo de Telegram
-          </a>
+          <strong>Telegram:</strong>
+          <HyperLink href={TELEGRAM_URL} label="Únete a nuestro grupo de Telegram" openNewTab />
         </p>
         <p>
-          <strong>Meetup:</strong>{" "}
-          <a
-            href={MEETUP_URL}
-            target="_blank"
-            rel="noopener noreferrer" // improves security (blocks window.opener) and privacy (omits referrer)
-          >
-            Únete a nuestro grupo de Meetup
-          </a>
+          <strong>Meetup:</strong>
+          <HyperLink href={MEETUP_URL} label="Únete a nuestro grupo de Meetup" openNewTab />
         </p>
       </div>
     </section>

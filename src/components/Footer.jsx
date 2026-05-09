@@ -1,9 +1,12 @@
 import React from "react";
+import HyperLink from "./HyperLink";
 
-function Footer() {
+function Footer({ label, ...props }) {
   return (
     <footer className="App-footer">
-      <small>© {new Date().getFullYear()} Valencia Social Runners</small>
+      © 
+      {new Date().getFullYear()}
+      <HyperLink href="https://valenciasocialrunners.netlify.app/" label="Valencia Social Runners" openNewTab />
     </footer>
   );
 }
