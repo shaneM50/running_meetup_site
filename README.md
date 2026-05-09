@@ -1,6 +1,8 @@
 # Running Meetup Site
 
-Simple web app to organize local running meetup — list events, connect.
+Simple web app to organize local running meetup — list event schedule, connect with the group.
+
+[![Deployed with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://valenciasocialrunners.netlify.app/)
 
 ## Quick start
 ```bash
