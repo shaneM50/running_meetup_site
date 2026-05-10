@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/Header";
 import About from "./components/About";
 import Connect from "./components/Connect";
-import Schedule from "./components/Schedule";
+import Events from "./components/Events";
 import Footer from "./components/Footer";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
   const NAV_ITEMS  = [
     { href: '#about', label: 'Sobre nosotros' },
     { href: '#connect', label: 'Únete' },
+    { href: '#events', label: 'Events' },
   ];
 
   return (
@@ -19,6 +20,7 @@ function App() {
       <main>
         <About />
         <Connect />
+        <Events />
       </main>
       <Footer label={SITE_NAME} />
     </div>

@@ -7,9 +7,9 @@ function Header({ title, navItems, ...props }) {
       <h1>{title}</h1>
       <nav>
         <ul>
-          {navItems.map(aNavItem => (
-            <li key={aNavItem.href}>
-              <HyperLink href={aNavItem.href} label={aNavItem.label} />
+          {navItems.map(item => (
+            <li key={item.href}>
+              <HyperLink href={item.href} label={item.label} />
             </li>
           ))}
         </ul>
