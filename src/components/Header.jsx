@@ -1,13 +1,18 @@
 import React from "react";
 import HyperLink from "./HyperLink";
 
-function Header() {
+function Header({ title, navItems, ...props }) {
   return (
     <header className="App-header">
-      <h1>Valencia Social Runners</h1>
+      <h1>{title}</h1>
       <nav>
-        <HyperLink href="#about" label="Sobre nosotros" />
-        <HyperLink href="#connect" label="Únete"/>
+        <ul>
+          {navItems.map(aNavItem => (
+            <li key={aNavItem.href}>
+              <HyperLink href={aNavItem.href} label={aNavItem.label} />
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );

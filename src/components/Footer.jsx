@@ -6,7 +6,7 @@ function Footer({ label, ...props }) {
     <footer className="App-footer">
       © 
       {new Date().getFullYear()}
-      <HyperLink href="https://valenciasocialrunners.netlify.app/" label="Valencia Social Runners" openNewTab />
+      {label}
     </footer>
   );
 }

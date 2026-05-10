@@ -7,14 +7,20 @@ import Schedule from "./components/Schedule";
 import Footer from "./components/Footer";
 
 function App() {
+  const SITE_NAME = 'Valencia Social Runners';
+  const NAV_ITEMS  = [
+    { href: '#about', label: 'Sobre nosotros' },
+    { href: '#connect', label: 'Únete' },
+  ];
+
   return (
     <div className="App">
-      <Header />
+      <Header title={SITE_NAME} navItems={NAV_ITEMS} />
       <main>
         <About />
         <Connect />
       </main>
-      <Footer />
+      <Footer label={SITE_NAME} />
     </div>
   );
 }

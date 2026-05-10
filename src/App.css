@@ -22,13 +22,19 @@
   gap: 0.5rem;
 }
 
-.App-header nav {
+.App-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 1rem;
 }
 
-.App-header nav a {
+.App-header nav ul li a {
+  display: block;
+  padding: 0.75rem 1rem;
   color: #61dafb;
+  text-decoration: none;
 }
 
 main {
@@ -43,17 +49,11 @@ main {
   margin-bottom: 0.5rem;
 }
 
-label {
-  display: flex;
-  flex-direction: column;
-  font-size: 0.9rem;
-}
-
 .App-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;   /* space between items */
+  gap: 0.5rem;  
   padding: 1rem;
   border-top: 1px solid #ddd;
   font-size: 0.8rem;
