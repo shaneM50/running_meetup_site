@@ -1,5 +1,4 @@
 import React from "react";
-import HyperLink from "./HyperLink";
 
 function Footer({ label, ...props }) {
   return (
