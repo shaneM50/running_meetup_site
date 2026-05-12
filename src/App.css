@@ -59,3 +59,48 @@ main {
   font-size: 0.8rem;
   color: #555;
 }
+
+.proxy-info {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.proxy-info a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+/* Error state styling */
+.proxy-error {
+  color: #c00;
+}
+
+/* "Failed to load events:" label (replaces <strong>) */
+.proxy-error-label {
+  font-weight: 600;
+}
+
+/* Error text appears on same line as label */
+.proxy-error-text {
+  margin-left: 0.25rem;
+}
+
+/* Use block layout for separate lines instead of <br> */
+.proxy-note {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events-list li + li {
+  margin-top: 0.5rem;
+}
