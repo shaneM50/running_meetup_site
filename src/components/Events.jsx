@@ -42,8 +42,6 @@ function Events() {
 
   if (error) return <p className="error">Error loading events: {error}</p>;
 
-  const showProxyNotice = !!error || events.length === 0;
-
   return (
     <div>
       <h2>Upcoming Events</h2>
