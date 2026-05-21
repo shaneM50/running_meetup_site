@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import HyperLink from "./HyperLink";
 
 function Events() {
-  const MEETUP_GROUP = "valencia-social-runners";
-  const RSS_URL = `https://cors-anywhere.herokuapp.com/https://www.meetup.com/${MEETUP_GROUP}/events/rss/`;
+  const RSS_URL = `https://rss-proxy-0phy.onrender.com/meetup`;
 
   const [events, setEvents] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -41,33 +40,13 @@ function Events() {
 
   if (loading) return <p>Loading upcoming events…</p>;
 
+  if (error) return <p className="error">Error loading events: {error}</p>;
+
   const showProxyNotice = !!error || events.length === 0;
 
   return (
     <div>
       <h2>Upcoming Events</h2>
-
-      {showProxyNotice && (
-        <p className={`proxy-info ${error ? "proxy-error" : ""}`}>
-          {error ? (
-            <>
-              <span className="proxy-error-label">Failed to load events:</span>
-              <span className="proxy-error-text">{error}</span>
-            </>
-          ) : null}
-          <span className="proxy-note">
-            A 3rd-party CORS proxy is used for development; enable temporary access at{" "}
-            <a
-              href="https://cors-anywhere.herokuapp.com/corsdemo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              cors-anywhere.herokuapp.com
-            </a>{" "}
-            for the events list to populate.
-          </span>
-        </p>
-      )}
 
       {events.length > 0 ? (
         <ul className="events-list">
@@ -77,7 +56,9 @@ function Events() {
             </li>
           ))}
         </ul>
-      ) : null}
+      ) : (
+        <p>No upcoming events.</p>
+      )}
     </div>
   );
 }
