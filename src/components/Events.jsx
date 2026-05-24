@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HyperLink from "./HyperLink";
 
-function parseEvents() {
-  
-}
-
 const Events = () => {
   const RSS_URL = `https://rss-proxy-0phy.onrender.com/meetup`;
 
