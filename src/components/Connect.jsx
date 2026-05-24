@@ -7,7 +7,7 @@ function Connect() {
 
   return (
     <section id="connect" className="section">
-      <h2>Connect</h2>
+      <h2>Únete</h2>
 
       <div className="connect-links">
         <p>

@@ -11,7 +11,7 @@ function App() {
   const NAV_ITEMS  = [
     { href: '#about', label: 'Sobre nosotros' },
     { href: '#connect', label: 'Únete' },
-    { href: '#events', label: 'Events' },
+    { href: '#events', label: 'Eventos' },
   ];
 
   return (
