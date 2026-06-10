@@ -2,7 +2,7 @@
 
 Simple web app to organize local running meetup — list event schedule, connect with the group.
 
-Live site is deployed with Netlify to [valenciasocialrunners.netlify.app](https://valenciasocialrunners.netlify.app/)
+Live site is deployed with Netlify to [socialrunners.netlify.app](https://socialrunners.netlify.app/)
 
 ## Quick start
 ```bash
